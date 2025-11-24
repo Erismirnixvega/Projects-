@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    zoom: 103%;
+}
+
+/* HTML Semantic element design */
+
+.Header {
+    border: 10px solid #90ACA0;
+    background-color: #90ACA0;
+    color: white;
+    text-align: center;
+    height: 190px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.Nav {
+    border: 5px solid #C1D0B8;
+    border-radius: 3px;
+    background-color: #C1D0B8;
+    color: white;
+    width: 13%;
+    height: 250px;
+    margin: 50px;
+    display: block;
+    float: right;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* font styles, flexbox alignment */
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 70px;
+    padding-left: 20px;
+}
+
+p, ol {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+ol {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    
+
+}
+
+#structuur {
+    justify-content: right;
+    text-indent: 20px;
+    display: flex;
+    cursor: pointer;
+}
