@@ -5,30 +5,87 @@
     zoom: 103%;
 }
 
-/* HTML Semantic element design */
+body {
+    background-color: #fffaf0;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #efefe7 0, #efefe7 1px, #fffaf0 0, #fffaf0 50%);
+}
+
+/* HTML Semantic element ontwerp */
 
 .Header {
     border: 10px solid #90ACA0;
     background-color: #90ACA0;
-    color: white;
+    color: ghostwhite;
     text-align: center;
     height: 190px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 90px 90px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 }
 
+.Header p {
+    margin-left: 20px;
+    margin-right: 50px;
+    transition: 0.3s;
+}
+
+.Header h1 {
+    margin-left: 20px;
+    color: transparent;
+    background-image:url('img/logopattern.png');
+    background-clip: text;   
+    background-posiiton: center;
+}
+
+
+.Header p:hover {
+    opacity: 0.5;
+}
+
 .Nav {
     border: 5px solid #C1D0B8;
-    border-radius: 3px;
+    border-radius: 16px;
     background-color: #C1D0B8;
-    color: white;
-    width: 13%;
+    color: ghostwhite;
+    width: 11%;
     height: 250px;
     margin: 50px;
     display: block;
     float: right;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: -10%;
+    margin-right: 10%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(-20px);
+
+    }
+    100% {
+        transform: translateZ(10%);
+    }
+}
+
+.Nav ol {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.Nav h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* font styles, flexbox alignment */
@@ -47,20 +104,45 @@ p, ol {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
+    font-size: 21px;
 }
 
-ol {
-    display: block;
-    text-align: center;
+
+ol:hover {
+    opacity: 0.6;
     cursor: pointer;
-    
+     filter: blur(1px);
 
 }
+
+
 
 #structuur {
     justify-content: right;
     text-indent: 20px;
     display: flex;
     cursor: pointer;
+}
+
+#title h1 {
+    display: block;
+    margin-left: 60px;
+    margin-top: 90px;
+    padding: 20px;
+    color: #9a5543;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 90px;
+}
+
+#title p {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 1px;
+    padding: 25px;
+    color: #a27e71;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-style: italic;
 }

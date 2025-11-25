@@ -1,7 +1,7 @@
 # Over Project (Week 1)
 
 ## Inhoud
-*Dit is een website dat wordt geleken op een moderne bankapplicatie.*
+*Dit bevat een website dat is geprobeerd om op te lijken als een moderne bankapplicatie.*
 
 
 ## Reden
