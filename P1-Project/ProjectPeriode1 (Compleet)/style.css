@@ -1,0 +1,553 @@
+/* Hele pagina instellingen */
+
+* {
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  overflow-x: hidden;
+  zoom: 100%;
+}
+
+/* Pagina 1 specifiek */
+
+
+.hometext {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  left: 58px;
+  top: 48px;
+  font-family: "Roboto Mono", monospace;
+
+}
+
+#pd1font {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+ .ulnavigatiepg1 {
+    list-style-type: none;
+    border-radius: 500px;
+    background: #b3b3b3;
+    padding-top: 24px;
+    padding-right: 14px;
+    width: 644px;
+    height: 61px;
+    position: absolute;
+    top: -29px;
+    right: -13px;  
+    list-style-type: none;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;  
+    opacity: 0.85;
+}
+
+
+#textmod{
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 2;
+  color: white;
+}
+
+
+img.home {
+  border-radius: 0px 0px 431px 431px;
+  position: relative;
+  right: 9px;
+  bottom: 250px; 
+  filter: grayscale(1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+  width: 1934px; 
+  height: 1220px;
+
+  
+}
+
+#input1 {
+  position: relative;
+  right: -910px;
+}
+
+/* Tekst-formaat vanuit Pagina 1 */
+
+.h1form1 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  top: -200px;
+}
+
+.pform1 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: -200px;
+}
+
+/* Formaat vanuit Pagina 2-6 */
+
+
+.h1form {
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#beweeg {
+  position: relative;
+  left: 20%;
+}
+
+.pform {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+/* Button input */
+
+input[type=button] {
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 14px 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 1, 0.2);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* Navigatie balk van Pagina 2-6 */
+
+.edit {
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  left: 20%;
+}
+
+#pd2 a {
+   font-family: "Inter", sans-serif;
+   font-size: 20px;
+   text-decoration: none;
+   font-weight: 400;
+   float: right;
+   display: flex;
+   position: relative;
+   right: 200px;
+   top: 60px;
+   text-indent: 50px;
+   color: black;
+   
+}
+
+#pd2 p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+#pd2 input {
+  position: relative;
+  right: -1780px;
+  bottom: -45px;
+  
+}
+
+#move {
+  position: relative;
+  right: -50px;
+  bottom: 20px;
+}
+
+
+/* Footer van alle paginas */
+
+footer {
+  margin: -20px;
+  padding: -10px;
+  height: 65dvh;
+  background-color: black;
+  color: white;
+}
+
+#h1footer {
+  position: relative;
+  left: -624px;
+  top: 200px;
+  font-size: 90px;
+}
+
+#afooter1 a {
+  font-family: "Inter", sans-serif;
+  font-size: 29px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  margin: 15px;
+  left: 1300px;
+}
+
+#afooter2 a {
+  font-family: "Inter", sans-serif;
+  font-size: 29px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  margin: 15px;
+  left: 1600px;
+  top: -210px;
+}
+
+/* Alignment specifiek */
+ 
+/* Pagina 2 */
+
+.pd2pgf {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+#ppd2al1 {
+  position: relative;
+  right: 109px;
+  bottom: -150px;
+}
+
+#imgpd2 {
+  position: relative;
+  left: 919px;
+}
+
+#imgpd21 {
+  position: relative;
+  left: 219px;
+}
+
+#h1al2 {
+  position: relative;
+  left: -700px;
+}
+
+
+#ppd2al2 {
+  position: relative;
+  left: -1200px;
+  top: 200px;
+}
+
+/* Pagina 3 */
+
+.pd3pgf {
+  display: flex;
+  justify-content: left;
+}
+
+
+#h1pd3 {
+  position: relative;
+  right: 400px;
+
+}
+
+#p1ph3 {
+  position: relative;
+  right: 850px;
+  top: 150px;
+}
+
+#imgpd31{
+  border-radius: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  left: 997px;
+  top: 14px;
+
+}
+
+#beweeg2 {
+  position: relative;
+  top: 200px;
+  font-size: 200%;
+}
+
+article {
+  margin: -9px;
+  padding-bottom: 2px;
+  height: 35dvh;
+  background-color: black;
+  color: white;
+}
+
+#imgpd32{
+  position: absolute;
+  bottom: -36%;
+  left: 5%;
+}
+
+#h1pd32 {
+  font-size: 60px;
+  position: relative;
+  left: 4%;
+}
+
+#p1ph32 {
+  position: relative;
+  right: -11%;
+  top: 180px;
+}
+
+#h1pd33 {
+  font-size: 50px;
+  position: relative;
+  left: 86%;
+  top: 100px;
+}
+
+#p1ph33 {
+  position: relative;
+  right: -58%;
+  bottom: 20px;
+}
+
+#imgpd33{
+  position: absolute;
+  bottom: -25%;
+  left: 82.5%;
+}
+
+
+#h1articlepd3 {
+  text-align: center;
+  font-size: 53px;
+  position: relative;
+  left: 40%;
+}
+
+.right {
+  text-align: right;
+  text-indent: 200px;
+  font-size: 20px;
+  position: relative;
+  right: 90px;
+}
+
+
+
+/* Pagina 4 */
+
+.pd4pgf {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pd4pgf2 {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: relative;
+  left: 200px;
+}
+
+#pd4pgf3 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  position: relative;
+  left: 1200px;
+}
+
+
+.videomv {
+  position: relative;
+  left: 15%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#articlepg4  {
+  margin-top: 20px;
+  background-image: url(img/futurepagesclassroom.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  filter: grayscale(1);
+  opacity: 1;
+}
+
+#lettersizepg4 {
+  letter-spacing: 9px;
+  font-size: 25px;
+  color: black;
+}
+
+
+.articleh1 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+/* Pagina 5 */
+
+table {
+  background-color: black;
+  height: 106px;
+  width: 1286px;
+  border-radius: 43px;
+  border-spacing: 40px;
+  border-collapse: seperate;
+  margin: auto;
+  padding: 100px;
+}
+
+th { 
+  background-color: white;
+  border-radius: 15px;
+  width: 200px;
+  height: 68px;
+  position: relative;
+  top: 50px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+td {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  width: 200px;
+  height: 59px;
+  position: relative;
+  top: 50px;
+  padding: 4px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+.borderx {
+  border: 1px solid  white;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  height: 710px;
+  width: 60%;
+  left: 20%;
+  bottom: -41%;
+  
+}
+
+.arrow {
+  font-size: 500%;
+  display: flex;
+  justify-content: center;
+}
+
+#contactbutton {
+  position: relative;
+  left: 60%;
+  bottom: 170px;
+  height: 100px;
+  width: 20%;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+#beweeg3 {
+  position: relative;
+  left: 10%;
+  top: 200px;
+}
+
+/* Pagina 6 */
+
+input[type=submit] {
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 14px 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 1, 0.2);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  left: 40%;
+
+}
+
+input[type=text], input[type=email], input[type=date], input[type=tel], select, textarea {
+  width: 424px;
+  height: 94px;
+  padding: 20px;
+  display: flex;
+  margin: 85px;
+  border: 1px solid black;
+  border-radius: 15px;
+  resize: vertical;
+  font-family: "Inter", sans-serif;
+}
+
+
+.container {
+ background-color: black;
+ height: 1332px;
+ width: 700px;
+ border-radius: 56px;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ left: 31%;
+}
+

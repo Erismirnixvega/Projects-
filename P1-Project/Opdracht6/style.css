@@ -1,0 +1,141 @@
+
+
+#pd1 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+
+ul {
+    list-style-type: none;
+    border-radius: 500px;
+    background: #000000;
+    padding-top: 24px;
+    padding-right: 14px;
+    width: 644px;
+    height: 61px;
+    position: absolute;
+    top: -28px;
+    right: -10px;
+    opacity: 0.24;    
+}
+
+
+ul.side {
+    list-style-type: none;
+    width: 25%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+ul.side li a {
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+    
+    
+}
+
+
+img.home {
+  border-radius: 0px 0px 431px 431px;
+  position: relative;
+  right: 9px;
+  bottom: 250px; 
+  filter: grayscale(1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+  width: 1934px; 
+  height: 1220px;
+
+  
+}
+
+input[type=button] {
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 14px 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 1, 0.2);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 3442px;
+  height: 376px;
+  position: relative;
+  bottom: 20px;
+  
+
+}
+
+.tilt-neon-1 {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+
+
+#h1form1 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#input1 {
+  position: relative;
+  right: -910px;
+}
+
+#positionalignment1 {
+  position: relative;
+  bottom: 250px;
+}
+
+#pd2 a {
+   font-family: "Inter", sans-serif;
+   font-size: 20px;
+   text-decoration: none;
+   font-weight: 400;
+   float: right;
+   display: flex;
+   position: relative;
+   right: 100px;
+   text-indent: 50px;
+   color: black;
+   
+}
+
+#pd2 p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  
+
+}
+
+#pd2 input {
+  position: relative;
+  right: -2780px;
+  bottom: 6px;
+  
+}
+

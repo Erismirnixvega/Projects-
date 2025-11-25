@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    background-color: limegreen;
+    padding: 20px;
+
+}
+
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(68, 152, 212);
+    position: sticky;
+    top: 0; /* Zorgt ervoor dat de header aan de bovenkant blijft */
+}
+
+nav ul {
+    background-color: coral;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none; /* Verwijdert de standaard opsommingstekens */
+}
+
+main {
+    background-color: lightblue;
+    flex: 1; /* Zorgt ervoor dat main de resterende ruimte inneemt */
+}
+
+footer {
+    background-color: rgb(195, 102, 102);
+} 
+
+img {
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+
+}
