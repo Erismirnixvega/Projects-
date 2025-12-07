@@ -176,32 +176,50 @@ body.login {
     
 }
 
-#login input, h2 {
-    display: block;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    font-size: 90%;
-    text-align: center;
-    color: white;
-}
+
 
 #login input {
     border-radius: 3px;
-    height: 30px;
+    height: 50%;
     text-align: left;
     font-size: 15px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: rgba(188, 184, 184, 0.15);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    display: block;
+    margin-left: 1%;
+    margin-bottom: 10%;
+    font-size: 90%;
+    text-align: center;
+    color: white
 }
+
+#login input:focus {
+    outline: none;
+    border-color: #808080;
+    
+}
+
+#login input::placeholder {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 100;
+}
+
+
 #login label {
     font-weight: 100;
 }
 
 #login h2 {
     font-weight: 500;
-    font-size: 50px;
+    font-size: 200%;
+
+    display: block;
+    margin-left: -5%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: white;
 }
 
 #login button {
@@ -219,24 +237,17 @@ body.login {
     
 }
 
+
 #login a {
     font-size: small;
-    color: black;
+    color: #e4e7e3;
     text-decoration: none;
-    margin: 20%;
+    margin-left: 18%;
 }
-
-#login button::backdrop {
-
-}
-
-.closebtn {
-    color: white;
-   
-}
-
 
 .loginbtn {
     color: white;
+    margin-left: 34%;
    
 }
+

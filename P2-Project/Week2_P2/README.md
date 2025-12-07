@@ -14,5 +14,5 @@
 - JavaScript
 
 ### Changelog
-- Inloggen toegevoegd
+- Login systeem toegevoegd
 

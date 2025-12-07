@@ -14,11 +14,10 @@
     <div id="login">
         <h2>Inloggen</h2>
         <form action="" method="post">
-            <input type="text" placeholder="Gebruikersnaam" name="uname" required>
-            <input type="password" placeholder="Wachtwoord" name="lname" required>
+            <input type="text" placeholder="Gebruikersnaam" name="uname" id="username"  required>
+            <input type="password" placeholder="Wachtwoord" name="lname" id="password"  required>
             <a href="#">Vergeet wachtwoord?</a>
-            <button class="loginbtn">Inloggen</button>
-            <button class="closebtn" onclick="location.href='index.html'">Cancel</button>
+            <button class="loginbtn" type="submit" form="POST" onclick="getInfo()">Inloggen</button>
         </form>        
     </div>
 
