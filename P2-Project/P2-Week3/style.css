@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    zoom: 103%;
+}
+
+body.home {
+    background-color: #fffaf0;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #efefe7 0, #efefe7 1px, #fffaf0 0, #fffaf0 50%);
+}
+
+/* HTML Semantic element ontwerp */
+
+.Header {
+    border: 10px solid #90ACA0;
+    background-color: #90ACA0;
+    color: ghostwhite;
+    text-align: center;
+    height: 190px;
+    border-radius: 0 0 90px 90px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.Header p {
+    margin-left: 20px;
+    margin-right: 50px;
+    transition: 0.3s;
+}
+
+.Header h1 {
+    margin-left: 20px;
+    color: transparent;
+    background-image:url('img/logopattern.png');
+    background-clip: text;   
+    background-posiiton: center;
+}
+
+
+.Header p:hover {
+    opacity: 0.5;
+}
+
+.Nav {
+    border: 5px solid #C1D0B8;
+    border-radius: 16px;
+    background-color: #C1D0B8;
+    color: ghostwhite;
+    width: 11%;
+    height: 250px;
+    margin: 50px;
+    display: block;
+    float: right;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: -10%;
+    margin-right: 10%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(-20px);
+
+    }
+    100% {
+        transform: translateZ(10%);
+    }
+}
+
+.Nav ol {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.Nav h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* font styles, flexbox alignment */
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 70px;
+    padding-left: 20px;
+}
+
+p, ol {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 21px;
+}
+
+
+ol:hover {
+    opacity: 0.6;
+    cursor: pointer;
+     filter: blur(1px);
+
+}
+
+
+
+
+#structuur {
+    justify-content: right;
+    text-indent: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+#title h1 {
+    display: block;
+    margin-left: 60px;
+    margin-top: 90px;
+    padding: 20px;
+    color: #9a5543;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 90px;
+}
+
+#title p {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 1px;
+    padding: 25px;
+    color: #a27e71;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Inloggen structuur */
+
+#login {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(200, 196, 196, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 754px;
+    height: 543px;
+    margin: 29%;
+    margin-top: 8%;
+    padding: 250px;
+    padding-top: 10%;
+}
+
+
+body.login {
+    background: #90ACA0;
+    background: linear-gradient(40deg, rgba(144, 172, 160, 1) 50%, rgba(193, 208, 184, 1) 80%, rgba(255, 250, 240, 1) 200%); 
+    
+}
+
+
+
+#login input {
+    border-radius: 3px;
+    height: 50%;
+    text-align: left;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(188, 184, 184, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: block;
+    margin-left: 1%;
+    margin-bottom: 10%;
+    font-size: 90%;
+    text-align: center;
+    color: white
+}
+
+#login input:focus {
+    outline: none;
+    border-color: #808080;
+    
+}
+
+#login input::placeholder {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 100;
+}
+
+
+#login label {
+    font-weight: 100;
+}
+
+#login h2 {
+    font-weight: 500;
+    font-size: 200%;
+
+    display: block;
+    margin-left: -5%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: white;
+}
+
+#login button {
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(86, 85, 85, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+}
+
+
+#login a {
+    font-size: small;
+    color: #e4e7e3;
+    text-decoration: none;
+    margin-left: 18%;
+}
+
+.loginbtn {
+    color: white;
+    margin-left: 34%;
+   
+}
+

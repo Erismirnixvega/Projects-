@@ -1,4 +1,4 @@
-# Over Project (Week 2)
+# Over Project (Week 3)
 
 ## Inhoud
 *Dit bevat een website dat is geprobeerd om op te lijken als een moderne bankapplicatie.*
@@ -14,7 +14,6 @@
 - JavaScript
 
 ### Changelog
-- Login systeem toegevoegd
+- Dashboard toegevoegd
 
-- Wireframe geüpdatet
 
