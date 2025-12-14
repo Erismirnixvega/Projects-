@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inloggen</title>
+    <title>Dashboard</title>
 
 </head>
 <body class="bginfo">
-    <div id="login">
-        <h2>Inloggen</h2>
-        <form action="" method="post">
-            <input type="text" placeholder="Gebruikersnaam" name="uname" id="username"  required>
-            <input type="password" placeholder="Wachtwoord" name="lname" id="password"  required>
-            <a href="#">Vergeet wachtwoord?</a>
-            <button class="loginbtn" type="submit" form="POST" onclick="getInfo()">Inloggen</button>
-        </form>        
+    <div id="dashboard">
+        <h1>Rekeningbeheer</h1>
+        <div class="coverborder">
+            <h2>Uw rekeningen</h2>
+            <div class="rekeningborder">
+               <p>Betaalrekening</p>
+               <p>€1532.20</p>
+            </div>
+            <div class="rekeningborder">
+               <p>Spaarrekening</p>
+               <p>€3200.69</p>
+            </div>
+        </div>
+        <button id="toevoegen">Toevoegen</button>
     </div>
-
 <script src="script.js"></script>    
 </body>
 </html>

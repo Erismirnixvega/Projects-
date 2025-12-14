@@ -37,12 +37,34 @@ function getInfo() {
     if (user) {
         alert('Inloggen succesvol!');
         document.querySelector('button').disabled = true;
-        window.location.href = 'overschrijvingen.html';
+        window.location.href = 'dashboard.html';
     }
     else {
         alert('Ongeldige gebruikersnaam of wachtwoord.');
         passwordInput.value = '';
         passwordInput.focus();
     }
-
 };
+
+
+// Rekeningen toevoegen
+
+const voegrek = document.querySelector('#toevoegen');
+
+
+voegrek.addEventListener("click", () => {
+    const promptrek = prompt("Voeg een nieuwe rekening:", "Nieuwe Rekening");
+    let newDiv = document.createElement("div");
+    let newContent = document.createElement('p');
+    let newGeld = document.createElement('p');
+
+    if (promptrek != "" ) {
+        newDiv.classList.add('rekeningborder');
+        newContent.innerText = promptrek;
+        newGeld.innerText = '€0.00';
+
+        document.querySelector('.coverborder').appendChild(newDiv);
+        newDiv.append(newContent);
+        newDiv.append(newGeld);
+    }
+});

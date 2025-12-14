@@ -170,7 +170,7 @@ ol:hover {
 }
 
 
-body.login {
+body.bginfo {
     background: #90ACA0;
     background: linear-gradient(40deg, rgba(144, 172, 160, 1) 50%, rgba(193, 208, 184, 1) 80%, rgba(255, 250, 240, 1) 200%); 
     
@@ -192,7 +192,7 @@ body.login {
     margin-bottom: 10%;
     font-size: 90%;
     text-align: center;
-    color: white
+    color: white;
 }
 
 #login input:focus {
@@ -251,3 +251,90 @@ body.login {
    
 }
 
+/* Dashboard */
+
+#dashboard {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(200, 196, 196, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 70%;
+    margin: 17%;
+    margin-top: 4%;
+    padding: 250px;
+    padding-top: 10%;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#dashboard h1 {
+    color: black;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    padding-left: 12%;
+    padding-bottom: 5%;
+}
+
+.rekeningborder {
+    border-radius: 15px;
+    height: 50px;
+    width: 98%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(188, 184, 184, 0.12);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: white;
+    
+}
+
+.rekeningborder p {
+    font-size: 30px;
+    margin: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    
+}
+
+.coverborder {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(188, 184, 184, 0.12);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.coverborder h2 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-weight: 200;
+    color: white;
+}
+
+#dashboard button {
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(86, 85, 85, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    margin-bottom: 25px;
+    margin: 40%;
+    margin-top: 5%;
+    
+}

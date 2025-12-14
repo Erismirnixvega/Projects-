@@ -15,5 +15,6 @@
 
 ### Changelog
 - Dashboard toegevoegd
+- Wireframe geüpdatet
 
 
