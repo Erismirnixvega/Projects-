@@ -1,13 +1,13 @@
 function ReDirect() {
     if (confirm("Klik OK om verder te gaan.")) {
-        window.location.href = "rekeningen.html";
+        window.location.href = "dashboard.html";
     }
 }
 
 
 function ReDirect2() {
     if (confirm("Klik OK om verder te gaan.")) {
-        window.location.href = "overschrijvingen.html";
+        window.location.href = "overschrijven.html";
 
     }
 }
