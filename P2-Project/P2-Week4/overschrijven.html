@@ -12,9 +12,25 @@
 </head>
 <body class="bginfo">
     <div id="dashboard">
-        <h1>Overschrijven</h1>
-
-        <button id="overschrijven">Overschrijven</button>
+        <h1 id="overschrijftitel">Overschrijven</h1>
+        <div class="coverborder" id="overschrijvenstyle">
+            <form>
+                <label for="van">Van rekening:</label>
+                <select class="rekeningborder" id="selectvalue">
+                    <option>Betaalrekening (€1532)</option>
+                    <option>Spaarrekening (€3200)</option>
+                </select>
+                <label for="naar">Naar rekening:</label>
+                <select class="rekeningborder" id="selectvalue2">
+                    <option>Betaalrekening</option>
+                    <option>Spaarrekening</option>
+                </select>
+                <label for="bedrag">Bedrag:</label>
+                <span>&euro;</span>
+                <input type="number" placeholder="20" required class="rekeningborder" step="0.01" id="bedrag">
+            </form>
+        </div>
+        <button onclick="Overschrijven()">Overschrijven</button>
     </div>
 <script src="script.js"></script>    
 </body>

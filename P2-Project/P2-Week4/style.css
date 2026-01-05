@@ -188,7 +188,7 @@ body.bginfo {
     -webkit-backdrop-filter: blur(5px);
     display: block;
     margin-left: 1%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     font-size: 90%;
     text-align: center;
     color: white;
@@ -233,6 +233,7 @@ body.bginfo {
     background: rgba(86, 85, 85, 0.15);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    margin-left: 33%;
     
 }
 
@@ -242,6 +243,7 @@ body.bginfo {
     color: #e4e7e3;
     text-decoration: none;
     margin-left: 18%;
+    
 }
 
 .loginbtn {
@@ -278,6 +280,8 @@ body.bginfo {
     padding-left: 12%;
     padding-bottom: 5%;
 }
+
+/* Cover & rekening border is ook gebruikt bij overschrijven en rekeningen pagina! */
 
 .rekeningborder {
     border-radius: 15px;
@@ -334,5 +338,67 @@ body.bginfo {
     color: white;
     margin-left: 40%;
     margin-top: 5%;
+}
+
+/* Geld overschrijving */
+
+#overschrijftitel {
+    color: white;
+    margin-left: 6%;
+}
+
+#overschrijvenstyle label {
+    color: white;
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#overschrijvenstyle select {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#overschrijvenstyle input:focus {
+    outline: none;
+    border-color: #808080;
+    
+}
+
+
+
+#overschrijvenstyle input, select {
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    
+}
+
+#overschrijvenstyle span {
+    color: white;
+    display: flex;
+    transform: translate(1.5%, 148%);
+
+}
+
+
+/* Pijlen verwijderen bij input bij twee brwoser engines zoals Chromium (Edge, Chrome) en Gecko (Firefox)*/
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  
 }
 

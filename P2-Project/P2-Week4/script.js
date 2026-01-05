@@ -49,16 +49,13 @@ function getInfo() {
 
 // Rekeningen toevoegen
 
-const voegrek = document.querySelector('#toevoegen');
-
-
-voegrek.addEventListener("click", () => {
+function Toevoegen(event) {
     const promptrek = prompt("Voeg een nieuwe rekening:", "Nieuwe Rekening");
     let newDiv = document.createElement("div");
     let newContent = document.createElement('p');
     let newGeld = document.createElement('p');
 
-    if (promptrek != "" ) {
+    if (promptrek != "" && promptrek !== null ) {
         newDiv.classList.add('rekeningborder');
         newContent.innerText = promptrek;
         newGeld.innerText = '€0.00';
@@ -67,4 +64,30 @@ voegrek.addEventListener("click", () => {
         newDiv.append(newContent);
         newDiv.append(newGeld);
     }
-});
+    else {
+        event.preventDefault();
+    }
+};
+
+// Overschrijven
+
+function Overschrijven() {
+    const valueBedrag = document.querySelector('#bedrag').value;
+    const valueSelect = document.querySelector('#selectvalue').value;
+    const valueSelect2 = document.querySelector('#selectvalue2').value;
+
+    /* REGEX MATCH: Alleen voor nummers */
+    const regex = /\d+/g;
+    const totaalSelect = valueSelect.match(regex).join('');
+
+    /* Een omzetting van string naar int */
+    const x = parseInt(valueBedrag);
+    const y = parseInt(totaalSelect);
+
+    if ( y >= x ) {
+        alert("€" + valueBedrag + " is overschreven van " + valueSelect + " naar " + valueSelect2 + "!");
+    }
+    else {
+        alert("Ongeldige bedrag.");
+    }
+};
