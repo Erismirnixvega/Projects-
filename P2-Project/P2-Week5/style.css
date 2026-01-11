@@ -402,24 +402,99 @@ input[type=number]::-webkit-inner-spin-button {
   
 }
 
-select {
-    width: 200px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Transactie */
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Styling the options within the dropdown */
+li {
+    padding: 13px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+#transactieborder button {
+    margin-bottom: 20px;
+}
+
+#transactieborder label {
+    color: white;
+}
+
+#transactieh1 {
+    font-size: 50px;
+    
+}
+
+
+li.inkomend {
+    background-color: darkseagreen;
+    border-left: 5px solid rgb(145, 172, 145);
+    color: white;
+    font-weight: 600;
+}
+
+
+li.uitgaand {
+    background-color: #db133c;
+    border-left: 5px solid darkred;
+    color: white;
+    font-weight: 600;
+}
+
+select {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(86, 85, 85, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+   
+}
+
+input[type=date] {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(86, 85, 85, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+   
+}
+
+
 select option {
     background-color: #fff;
     color: #333;
-    padding: 5px; /* Padding on options has limited support */
+    padding: 5px; 
 }
 
-/* Styling the selected option using a pseudo-class */
+
 select option:checked {
-    background-color: #007bff; /* Color may not be fully customizable across browsers */
-    color: white;
+    background-color: #a5b8ab; 
 }

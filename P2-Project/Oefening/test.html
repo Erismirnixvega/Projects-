@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+t
+    <h1>My Transactions</h1>
+
+    <label for="filterType">Filter by Type:</label>
+    <select id="filterType" onchange="applyFilter()">
+        <option value="all">All</option>
+        <option value="deposit">Deposit</option>
+        <option value="withdrawal">Withdrawal</option>
+    </select>
+
+    <ul id="transactionList">
+        <!-- Transactions will be inserted here by JavaScript -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
