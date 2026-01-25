@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleggen</title>
+</head>
+<body class="bginfo">
+    <div id="dashboard">
+        <div id="beleggenborder">
+            <h1>Beleggen</h1>
+            <h2 id="saldo">Beschikbaar saldo: €<span id="saldo-bedrag">760.00</span></h2><br>
+
+            <label>Kies een categorie:</label>
+            <select id="categorie">
+                <option value="stocks">Aandelen</option>
+                <option value="crypto">Crypto</option>
+            </select><br><br>
+
+            <label>Kies een product:</label>        
+            <select id="product"></select><br>
+
+            <h3 id="selectprijs">Huidige prijs: €<span id="prijs">0.00</span></h3><br>
+            <h3>In bezit: <span id="in-bezit">0</span> eenheden</h3><br>
+            
+        
+            <label>Bedrag</label>
+            <input type="number" id="bedrag" min="0" step="1"><br>
+
+            <button id="koop">Kopen</button>
+            <button id="verkoop">Verkopen</button>
+
+            <p id="totaal-investering"></p>
+            <div id="melding"></div>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>

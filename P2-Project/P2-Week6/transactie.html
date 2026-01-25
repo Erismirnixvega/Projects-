@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactiegeschiedenis</title>
+
+</head>
+<body class="bginfo">
+    <div id="dashboard">
+        <h1 id="transactieh1">Transactiegeschiedenis</h1><br>
+
+        <div id="transactieborder">
+            <label for="filterType">Filter op type:</label>
+            <select id="filterType" onchange="applyFilter()">
+
+                <!-- Transactions wordt gezet bij  -->
+                <option value="alle">Alle</option>
+                <option value="inkomend">Inkomend</option>
+                <option value="uitgaand">Uitgaand</option>
+            </select>
+        </div>
+
+        <div id="transactieborder">
+            <label for="startDate">Startdatum:</label>
+            <input type="date" id="startDate" value="2025-12-01">
+            <label for="endDate">Einddatum:</label>
+            <input type="date" id="endDate" value="2025-12-31">
+            <button onclick="applyDateFilter()">Filteren</button><br>
+        </div>
+
+
+    <ul id="transactionList">
+        <!-- Transactions wordt ingezet bij JavaScript -->
+    </ul>
+   
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
