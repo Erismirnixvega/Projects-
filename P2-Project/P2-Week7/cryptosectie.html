@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+</head>
+<body class="bginfo">
+  <div id="dashboard">
+    <div id="bordervaluta">
+        <h2>Cryptovaluta Overzicht</h2><br>
+        
+        <!-- Balance Displays -->
+        <div id="portfolio">
+            <div class="crypto-item">Bitcoin: €<span id="bal-bitcoin">0.00</span> (90000 per eenheid)</div>
+            <div class="crypto-item">Ethereum: €<span id="bal-ethereum">0.00</span> (4800 per eenheid)</div>
+            <div class="crypto-item">Litecoin: €<span id="bal-litecoin">0.00</span> (250 per eenheid)</div>
+        </div><br>
+
+        <label>Kies een cryptovaluta:</label><br>
+        <select id="cryptoSelect">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="litecoin">Litecoin</option>
+        </select><br><br>
+        
+        <label>Bedrag (in €):</label><br>
+        <input type="number" id="amountInput" placeholder="100" value="100">
+
+        <button class="btn-buy"  onclick="handleTransaction('buy')">Kopen</button><br>
+        <button class="btn-sell" onclick="handleTransaction('sell')">Verkopen</button>
+
+        <p id="message"></p>
+    </div>
+ </div>
+<script src="script.js"></script>    
+</body>
+</html>
