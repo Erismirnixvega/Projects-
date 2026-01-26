@@ -1,4 +1,4 @@
-# Over Project (Week 6)
+# Over Project (Week 7)
 
 ## Inhoud
 *Dit bevat een website dat is geprobeerd om op te lijken als een moderne bankapplicatie.*
@@ -14,25 +14,10 @@
 - JavaScript
 
 ### Changelog
-- Beleggen pagina toegevoegd
+- Crypto pagina toegevoegd
 
 
-***
-
-### Reflectieblokje (hoort bij de opdracht)
 
 
-> Wat snap ik nu beter dan voor deze opdracht?
 
-* *Dynamische functie leren*
-
-> Waarvoor heb ik AI gebruikt?
-
-* *Snelle uitleggen opzoeken*
-* *Simpel functies geneeren*
-
-
-> Zou ik deze opdracht zonder AI kunnen maken?
-
-*Mogelijk met genoeg tijd besteden aan onderzoek via 
 
