@@ -165,7 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Crypto Valuta
+// Crypto Valuta portfolio
+
+ // Object portfolio met waarden voor elke cryptocurrency
 
  const portfolio = {
             bitcoin: 0,
@@ -178,12 +180,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const amount = parseFloat(document.getElementById('amountInput').value);
             const messageEl = document.getElementById('message');
 
+            // Validatie
+
             if (isNaN(amount) || amount <= 0) {
                 alert("Voer een geldig bedrag in.");
                 return;
             }
 
+      
             if (type === 'buy') {
+
+              // voorbeeld: Object 'bitcoin' verbindt met select waarde 'bitcoin'.
+          
                 portfolio[crypto] += amount;
                 messageEl.innerText = `Je hebt €${amount.toFixed(2)} in ${crypto.charAt(0).toUpperCase() + crypto.slice(1)} geïnvesteerd.`;
             } else {
@@ -199,16 +207,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function updateUI() {
-            // Update the numbers in the green boxes
+            // Update de weergegeven saldo
             document.getElementById('bal-bitcoin').innerText = portfolio.bitcoin.toFixed(2);
             document.getElementById('bal-ethereum').innerText = portfolio.ethereum.toFixed(2);
             document.getElementById('bal-litecoin').innerText = portfolio.litecoin.toFixed(2);
         }
 
+       // Simuleer prijsveranderingen elke 3 seconden
+
         setInterval(function () {
+
+           // Randomizer dus, math.floor = afronden, math.random = willekeurig getal
+
           let btcPrice = Math.floor(Math.random() * (500 - 90) + 300);
           let ethPrice = Math.floor(Math.random() * (260 - 40) + 160);
           let ltcPrice = Math.floor(Math.random() * (10 - 4) + 16);
+
 
           document.getElementById('bal-bitcoin').innerText = btcPrice + ",00";
           document.getElementById('bal-ethereum').innerText = ethPrice + ",00";
@@ -218,7 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Beleggen
 
-// Data
+// Data object met prijzen voor aandelen en crypto
+
 const data = {
     stocks: {
       TechCorp: 120,
@@ -304,9 +319,13 @@ const data = {
 
    // Neemt de huidige productnaam en berekent het totale bedrag dat in dat product is geïnvesteerd.
   function updateTotaalInvesteringText(product) {
+
     // || 0 zorgt ervoor dat de standaardwaarde 0 is als het product nog niet in bezit is.
     const totaal = totaalInvestering[product] || 0;
     if (totaal > 0) {
+      
+      // Weergeven van totale investering in HTML
+
       totaalInvP.innerHTML =
         `Je hebt €${formatMoney(totaal)} geïnvesteerd in ${product}.`;
     } else {

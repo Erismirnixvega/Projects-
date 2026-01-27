@@ -566,10 +566,10 @@ select option:checked {
 }
 
 #bordervaluta button {
-    margin: 0%;
-    margin-top: 5%;
-    margin-left: 40%;
-    padding: 20px;
+   margin: auto;
+   display: flex;
+   margin-top: 5%;
+   padding: 10px;
 }
 
 
@@ -583,7 +583,10 @@ select option:checked {
     color: whitesmoke;
     display: flex;
     align-items: center;
-    gap: 10px;
+    border-radius: 10px;
+    height: 70%;
+    text-align: center;
+    margin-top: 4%;
 }
 
 
