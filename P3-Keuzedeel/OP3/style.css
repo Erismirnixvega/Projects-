@@ -1,0 +1,121 @@
+/* CSS Grid Layout */
+
+* {
+    box-sizing: border-box;
+    margin: auto;   
+}
+
+header {
+    display: grid;
+    background-color: grey;
+    padding: 5%;
+    gap: 5px;
+    justify-content: center;
+}
+
+section, article {
+    grid-area: content;
+    padding: 5%;
+    background-color: ghostwhite;
+    display: block;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 5%;
+}
+
+nav {
+    background: #333;
+    font-family: Arial, sans-serif;
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+   padding: 5%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    border-bottom: 1px solid #444;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    
+}
+
+a:hover {
+    background: #444;
+}
+
+/* Hamburger icon */
+label {
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    ul {
+        display: flex;
+    }
+    
+    li {
+        border: none;
+    }
+}
+
+/* Mobile view */
+
+@media (max-width: 767px) {
+    label {
+        display: flex;
+        color: white;
+    }
+
+    ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-out;
+        margin-left: 50%;
+    }
+
+
+
+    input:checked ~ ul {
+        max-height: 300px; /* Hoog genoeg voor alle items */
+        display: inline-block;
+    }
+
+    /* Hamburger lijnen */
+    label::before {
+        content: "☰";
+        font-size: 24px;
+    }
+
+    input:checked + label::before {
+        content: "✕";
+        height: 30px;
+    }
+}
+
+
