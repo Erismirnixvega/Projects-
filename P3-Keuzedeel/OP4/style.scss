@@ -1,0 +1,185 @@
+/* SCSS Grid Layout */
+
+@use 'config' as c;
+
+
+@for $i from 1 through 4 {
+    .line-#{$i} {
+        width: 2em * $i;
+    }
+}
+
+
+$thema: "donker";
+
+body {
+    @if $thema == 'licht' {
+        background-color: white;
+        color: black;
+
+    }
+
+    @else if $thema == 'donker' {
+        background-color: black;
+        color: white;
+    }
+}
+
+h1 {
+    @include config.font-style(24px, bold);
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;   
+}
+
+header {
+    display: grid;
+    background-color: #f4fcfd;
+    padding: c.$padding;
+    gap: 5px;
+    justify-content: center;
+}
+
+button {
+    background-color: c.$color;
+    color: c.$secondary-color;
+}
+
+section, article {
+    grid-area: content;
+    padding: c.$padding;
+    background-color: ghostwhite;
+    display: block;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 5%;
+}
+
+nav {
+    background: #f4fcfd;
+    font-family: c.$primary_font;
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    padding: c.$padding;
+
+    ul  {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        border-bottom: 1px solid #444;
+    
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+
+        &:hover {
+            background: #444;
+        }
+    }
+
+   
+}
+
+
+
+
+label {
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Desktop view */
+@media (min-width: $breakpoint-desktop) {
+    ul {
+        display: flex;
+    }
+    
+    li {
+        border: none;
+    }
+}
+
+/* Mobile view */
+
+@media (max-width: $breakpoint-mobile) {
+    label {
+        display: flex;
+        color: black;
+        
+        &::before {
+            content: "☰";
+            font-size: 24px;
+        }
+    }
+
+    ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-out;
+        margin-left: 50%;
+
+        input:checked ~ & {
+        max-height: 300px; /* Hoog genoeg voor alle items */
+        display: inline-block;
+        }
+    }
+    
+    input:checked + label::before {
+        content: "✕";
+        height: 30px;
+    }
+}
+
+
+/* Tablet view */
+
+@media (max-width: $breakpoint-mobile) {
+    label {
+        display: flex;
+        color: black;
+        
+        &::before {
+            content: "☰";
+            font-size: 24px;
+        }
+    }
+
+    ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-out;
+        margin-left: 50%;
+
+        input:checked ~ & {
+        max-height: 300px; /* Hoog genoeg voor alle items */
+        display: inline-block;
+        }
+    }
+    
+    input:checked + label::before {
+        content: "✕";
+        height: 30px;
+    }
+}
+
