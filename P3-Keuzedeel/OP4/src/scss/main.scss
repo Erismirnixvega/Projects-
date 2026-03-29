@@ -1,0 +1,168 @@
+/* CSS Grid Layout */
+
+@import 'config.scss';
+
+$primary-color: #D9D9D9;
+$secondary-color: #2D3648;
+$text-color: #4F378A;
+$padding-base: 15px;
+$border-radius-lg: 10px;
+$font-size-main: 16px;
+$font-default: "Inter";
+$font-weight-default: 500;
+
+
+body {
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;   
+}
+
+
+.paragraph-style1 {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+p {
+    @extend paragraph-style1  !optional;
+}
+
+header {
+    padding: 5%;
+    gap: 5px;
+}
+
+h1, h2 {
+    font-family: $font-default;
+    font-weight: $font-weight-default;
+}
+
+section {
+    article {
+        grid-area: content;
+        padding: 5%;
+        background-color: ghostwhite;
+        display: block;
+        justify-content: center;
+    }
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    font-family: 'sans-' + 'serif';
+}
+
+nav {
+    display: flex;
+    font-family: Arial, sans-serif;
+    grid-area: menu;
+    justify-content: center;
+    padding: 1%;
+    width: 50%;
+
+    // Genestelde ul
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid #444;
+        }
+    }
+
+}
+
+a {
+    color: $text_color;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    
+    
+    &:hover {
+         background: #444;
+    }
+
+    &::after {
+        content: ' →';
+    }
+    
+}
+
+
+
+/* icon */
+
+label {
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+@media (min-width: $breakpoint-tablet) {
+    ul {
+        display: flex;
+    }
+    
+    li {
+        border: none;
+    }
+}
+
+/* Mobile view */
+
+@media (max-width: $breakpoint-phone) {
+    label {
+        display: flex;
+        color: black;
+
+        &::before {
+            content: "☰";
+            border-style: solid;
+            font-size: 24px;
+            height: 44px;
+            width: 44px;
+            border-radius: 6px;
+        }
+    }
+
+    ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-out;
+        margin-left: 50%;
+    }
+
+
+
+    input:checked ~ ul {
+        max-height: 500px; /* Hoog genoeg voor alle items */
+        display: inline-block;
+    }
+
+    /* lijnen */
+    
+    input:checked + label::before {
+        content: "✕";
+        height: 30px;
+    }
+}
+
+
