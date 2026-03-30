@@ -6,34 +6,26 @@ $breakpoint-phone: 767px;
 $breakpoint-desktop: 808px;
 
 
+// IF else voor wat het is
 
+$button-type: warning;
 
-$button-style: "glass"; // Opties: "flat", "raised", "glass"
-
-.btn {
-  padding: 10px 20px;
+.button {
+  padding: 10px 16px;
+  color: white;
   border: none;
-  cursor: pointer;
-  transition: transform 0.1s;
 
-  // De logica voor de "klik" (active status)
-  &:active {
-    @if $button-style == "flat" {
-      background-color: #ddd;
-    } @else if $button-style == "raised" {
-      transform: translateY(2px);
-      box-shadow: none;
-    } @else if $button-style == "glass" {
-      opacity: 0.7;
-      backdrop-filter: blur(5px);
-    } @else {
-      outline: 2px solid blue;
-    }
+  @if $button-type == primary {
+    background-color: blue;
+  } @else if $button-type == warning {
+    background-color: orange;
+  } @else {
+    background-color: gray;
   }
 }
 
 
-// for-loop p-1 to p-5 (10px to 50px)
+// for-loop p-1  naar  p-5 (10px to 50px)
 @for $i from 1 through 5 {
   .p-#{$i} {
     padding: #{$i}0px;
@@ -41,20 +33,23 @@ $button-style: "glass"; // Opties: "flat", "raised", "glass"
 }
 
 
-// icon for snel verbinding
+// btn primary, success, danger classes
 
-$icons: "home", "email";
+$colors: (
+  "primary": #3498db,
+  "success": #27ae60,
+  "danger": #e74c3c
+);
 
-@each $icon in $icons {
-  .icon-#{$icon} {
-    background-image: url('P3-Keuzedeel/OP4/src/img/#{$icon}.png');
-    width: 24px;
-    height: 24px;
+@each $name, $color in $colors {
+  .btn-#{$name} {
+    background-color: $color;
   }
+
+  
 }
 
-
-// while loop 
+// while loop voor verhoogte font size (text-1 to text-3) +5 
 
 $font-size: 15;
 $i: 1;
@@ -65,8 +60,6 @@ $i: 1;
   }
   $i: $i + 1;
 }
-
-
 
 
 
