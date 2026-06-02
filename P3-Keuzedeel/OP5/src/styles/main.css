@@ -9,6 +9,34 @@
 }
 
 
+.error {
+    height: 100dvh;
+  background-image: radial-gradient(
+      circle at center center,
+      black 0 50px,
+      transparent 100px
+    ),
+    repeating-conic-gradient(black 0deg 10deg, #666 10deg 11deg);
+    color: white;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 500%;
+	  display: inline-block;
+	  padding-left: 50px;
+    display: table-cell;
+	  vertical-align: middle;  
+}
+
+.error p, a {
+  color: white;
+}
+
+
 
 body {
   background-color: #FEF7FF;
