@@ -5,16 +5,9 @@
 $primary-color: #D9D9D9;
 $secondary-color: #2D3648;
 $purple-color: #4F378A;
-$padding-base: 15px;
-$border-radius-lg: 10px;
-$font-size-main: 16px;
 $font-default: "Inter";
 $font-weight-default: 500;
 
-
-body {
-    color: black;
-}
 
 * {
     box-sizing: border-box;
@@ -35,14 +28,20 @@ p {
     @extend paragraph-style1  !optional;
 }
 
-header {
-    padding: 5%;
-    gap: 5px;
-}
 
-h1, h2 {
+h1 {
+    color: whitesmoke;
+    background-color: #4F378A;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 7%;
+    width: 13%;
+    padding: 2%;
+    text-align: center;
     font-family: $font-default;
     font-weight: $font-weight-default;
+    
 }
 
 section {
@@ -78,25 +77,30 @@ nav {
         padding: 0;
 
         li {
-            border-bottom: 1px solid #444;
+           align-self: start;
         }
     }
 
 }
 
 a {
-    color: $p;
+    color: $primary-color;
     text-decoration: none;
     padding: 15px 20px;
     display: block;
     
     
     &:hover {
-         background: #444;
+         color: $purple-color;
+         border-bottom: 2px solid $secondary-color;
+         width: 40%;
+         margin: 0 auto;
+         padding: 10%;
+
     }
 
     &::after {
-        content: ' →';
+      //  content: ' →';
     }
     
 }
