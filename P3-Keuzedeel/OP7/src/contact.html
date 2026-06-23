@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <link rel="stylesheet" href="styles/main.css">
     <meta charset="UTF-8">
+    <!-- Meta tags voor vindbaarheid (SEO) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op voor onze professionele diensten en services. Vul het formulier in voor vragen.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Fonts en Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-<title>Service</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- Duidelijke, betekenisvolle titel per pagina -->
+    <title>Contact opnemen met Service - Stel je vraag</title>
 </head>
 <body>
-  <main>
-    <section>
-      <article>
-        <h2>Contact</h2>
-        <p>Heb je vragen? Neem gerust contact met me op!</p>
+    <!-- Goede mappenstructuur / Document Outline (H1 -> H2) -->
+    <header>
+        <h1>Service</h1>
+    </header>
 
-        <form action="index.html"  method="get">
-          <p><input type="text" name="gebruikersnaam" placeholder="Naam" required></p>
-          <p><input type="email" name="e-mail" placeholder="E-mail" required></p>
-          <p><textarea placeholder="Opmerking" rows="4" required></textarea></p>
-          <p><button type="submit">Versturen</button></p>
-        </form>
-      </article>
-    </section>
-  </main>
+    <main>
+        <!-- HTML sitemap link optie binnen de pagina indien gewenst -->
+        <section>
+            <h2>Contact</h2>
+            <p>Heb je vragen? Neem gerust contact met me op!</p>
+            
+            <form action="index.html" method="get">
+                <label>
+                    Naam:
+                    <input type="text" name="gebruikersnaam" placeholder="Naam" required>
+                </label>
+                
+                <label>
+                    E-mail:
+                    <input type="email" name="e-mail" placeholder="E-mail" required>
+                </label>
+                
+                <label>
+                    Opmerking:
+                    <textarea placeholder="Opmerking" rows="4" required></textarea>
+                </label>
+                
+                <button type="submit">Versturen</button>
+            </form>
+        </section>
+    </main>
+
     <footer class="service-footer">
+        <!-- Footer navigatie met schone URL's en sitemap verwijzing -->
         <nav>
-            <p>LETS GO!</p>
-            <a href="over.html">About</a>
-            <a href="service.html">Service</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <p><strong>LETS GO!</strong></p>
+            <a href="over">About</a>
+            <a href="service">Service</a>
+            <a href="portfolio">Portfolio</a>
+            <a href="contact">Contact</a>
+            <a href="sitemap.html">Sitemap</a>
         </nav>
     </footer>
 </body>

@@ -1,5 +1,9 @@
-User-agent: GPTBot
-Disallow: /
+RewriteEngine On
 
-User-agent: Google-Extended
-Disallow: /
+<!-- Verwijs naar je aangepaste 404 pagina -->
+ErrorDocument 404 /error.html
+
+<!-- Verwijder .html van de URL voor nette URL's -->
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
